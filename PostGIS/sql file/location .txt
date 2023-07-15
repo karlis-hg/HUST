@@ -1,0 +1,7 @@
+D4: 21.0041782,105.8420572
+
+Delete from test_2
+Where id = 0;
+
+Insert into test_2 (id, name, way, queue, dist)
+Values (0, 'D4 Hust', ST_SetSRID(ST_MakePoint(21.00430, 105.84274), 3857), 0, 0);
