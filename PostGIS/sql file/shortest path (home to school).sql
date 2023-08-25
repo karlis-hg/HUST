@@ -2,18 +2,14 @@
 WITH start_point AS (
   SELECT topo.source --could also be topo.target
   FROM hanoi_routing as topo
-  ORDER BY topo.geom_way <-> ST_SetSRID(
-    ST_GeomFromText('POINT (105.8656595 20.9891936)'),
-  4326)
+  ORDER BY topo.geom_way <-> ST_GeomFromText('POINT (105.8656595 20.9891936)', 4326)
   LIMIT 1
 ),
 -- find the nearest vertex to the destination longitude/latitude
 destination AS (
   SELECT topo.source --could also be topo.target
   FROM hanoi_routing as topo
-  ORDER BY topo.geom_way <-> ST_SetSRID(
-    ST_GeomFromText('POINT (105.8553803 21.0249354)'),
-  4326)
+  ORDER BY topo.geom_way <-> ST_GeomFromText('POINT (105.8456361 21.0050392)', 4326)
   LIMIT 1
 )
 -- use Dijsktra and join with the geometries

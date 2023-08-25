@@ -1,4 +1,5 @@
 import psycopg2.extras
+import constants as cst
 
 
 def name_picker(name, operator):
@@ -8,11 +9,11 @@ def name_picker(name, operator):
     return res
 
 
-hostname = "localhost"
-database = "postgres"
-username = "postgres"
-pwd = "08062001"
-port_id = 5432
+hostname = cst.hostname
+database = cst.database
+username = cst.username
+pwd = cst.password
+port_id = cst.port_id
 
 conn = None
 cur = None
@@ -50,7 +51,8 @@ try:
             name text,
             way geometry(Point, 3857),
             queue smallint
-            )
+            );
+            CREATE INDEX IF NOT EXISTS idx_location ON atm_table(id, way)
             '''
             cur.execute(create_atm_table)
             # Insert created values into table

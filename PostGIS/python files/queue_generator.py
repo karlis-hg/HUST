@@ -17,11 +17,6 @@ def busy_gen():
     day_of_week = today.isoweekday()
     busy = 0
 
-    # # Manually select a day, its day of week and the hour
-    # day = 20
-    # dayOfWeek = 6
-    # currentHour = to_hour(20, 30)
-
     if day in payday:
         busy += 1
     if 17.5 <= current_hour < 22:

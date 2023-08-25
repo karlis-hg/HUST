@@ -5,3 +5,8 @@ Where id = 0;
 
 Insert into test_2 (id, name, way, queue, dist)
 Values (0, 'D4 Hust', ST_SetSRID(ST_MakePoint(21.00430, 105.84274), 3857), 0, 0);
+
+
+Random point chùa quỳnh (105.855256 21.000381)
+Random point vũ tông phan(105.8150899 20.9865794)
+Random point la thành (105.8237175 21.0221134)

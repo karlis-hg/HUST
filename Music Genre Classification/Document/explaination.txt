@@ -1,0 +1,5 @@
+ The wav.read() function returns a tuple of two values: the sample rate and the audio data. 
+ The sample rate is the number of times per second that the audio data is sampled. 
+ The audio data is a NumPy array that contains the audio samples.
+ 
+ MFCC: https://viblo.asia/p/so-luoc-ve-mel-frequency-cepstral-coefficients-mfccs-1VgZv1m2KAw

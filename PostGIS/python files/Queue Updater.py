@@ -1,12 +1,13 @@
 import psycopg2.extras
 import time
+import constants as cst
 from queue_generator import queue_gen, busy_gen
 
-hostname = "localhost"
-database = "postgres"
-username = "postgres"
-pwd = "08062001"
-port_id = 5432
+hostname = cst.hostname
+database = cst.database
+username = cst.username
+pwd = cst.password
+port_id = cst.port_id
 
 conn = None
 cur = None
@@ -30,6 +31,6 @@ try:
             if conn is not None:
                 conn.close()
         print("Values Updated !")
-        time.sleep(15)
+        time.sleep(60)
 except KeyboardInterrupt:
     print('Generator Stopped !')

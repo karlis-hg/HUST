@@ -1,0 +1,16 @@
+- Truyền tham số query point
+- Pgrouting tìm đường ngắn nhất
+-> Khoảng cách thật -> Thời gian đi (default xe máy: 40km/h)
++ -> Optimize thời gian đợi 
+- So sánh index / no index
+- Filter theo vị tr& hướng đi 
+
+4 tuần: 
+- 1 tuần phải xong pgrouting
+- 1 tuần để làm filter
+- 1 tuần để lọc bug, viết báo cáo, làm slide
+- 1 tuần làm index
+
+https://anitagraser.com/2011/12/15/an-osm2po-quickstart/
+https://gis.stackexchange.com/questions/175428/how-to-make-osm2po-5-1-write-an-sql-file
+https://anitagraser.com/2011/12/18/osm2po-part-2-pgrouting-on-osm-the-easy-way/
