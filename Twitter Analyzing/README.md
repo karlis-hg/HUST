@@ -1,4 +1,4 @@
-## Final kibana visualization found on report: https://github.com/ndycuong/TwitterAnalyzing/blob/main/report-Xproblem.pdf  
+## Final kibana visualization found on report: https://github.com/karlis-hg/HUST/blob/main/Twitter%20Analyzing/report-Xproblem.pdf  
 
 ### Spark-dataProcessing&Cleaning  
 ### GCSBucket-dataStoring  
